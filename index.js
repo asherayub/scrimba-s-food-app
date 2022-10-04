@@ -67,7 +67,7 @@ const calculateTotal = () => {
     <button class="complete__order">Complete Order</button>
   `;
 
-  //??? REMOVE BUTTON LOGIC
+  // REMOVE BUTTON LOGIC
   const removeBtns = document.querySelectorAll(".remove__btn");
   removeBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
@@ -84,6 +84,36 @@ const calculateTotal = () => {
   <button class="complete__order">Complete Order</button>`
           : ``
       }`;
+    });
+  });
+  // MODAL
+  const orderBtn = document.querySelector(".complete__order");
+  orderBtn.addEventListener("click", () => {
+    let modalHtml = `
+        <div class="modal">
+            <h2>Enter Card Details</h2>
+            <div class="inputs__all">
+            <form>
+                <input type="text" placeholder="Enter your name" required />
+                <input type="text" placeholder="Enter card number" required />
+                <input type="text" placeholder="Enter CVV" required />
+                <button type="submit" class="pay">Pay</button>
+                </form>
+            </div>
+        </div>
+    `;
+    document.body.innerHTML += modalHtml;
+    //   handling pay btn submitting form
+    const payBtn = document.querySelector(".pay");
+    payBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      let customerName = document.querySelector("form input").value
+      document.querySelector(
+        ".modal"
+      ).innerHTML = `<div class="thanks__message"><h1>Thanks ${customerName} for Buying</h1><small>window will reload shortly!</small></div>`;
+      setTimeout(() => {
+        location.reload();
+      }, 1500);
     });
   });
 };

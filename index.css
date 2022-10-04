@@ -112,3 +112,58 @@ body {
 .complete__order:hover {
   background-color: #10b47d;
 }
+.modal {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 2px #00000035;
+}
+.modal h2 {
+  font-size: 1rem;
+  padding: 10px 0;
+  text-align: center;
+}
+.inputs__all form {
+  display: flex;
+  flex-direction: column;
+}
+.inputs__all input {
+  width: 90%;
+  margin: 10px auto;
+  font-size: 1rem;
+  padding: 10px 2px;
+}
+.pay {
+  width: 90%;
+  margin: 10px auto;
+  padding: 20px 0;
+  background-color: #16db99;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.pay:hover {
+  background-color: #10b47d;
+}
+.thanks__message {
+  text-align: center;
+  background-color: #16db99;
+  padding: 5px;
+  height: 150px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
