@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+.background {
+  width: 100vw;
+  height: 250px;
+  background: url("https://media.istockphoto.com/photos/delicious-homemade-hamburger-and-french-fries-picture-id1254672762?b=1&k=20&m=1254672762&s=170667a&w=0&h=nKrG40G2jj9O8wzJ8wDD2zmUKNp00mcdVWK_f_zixug=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.text {
+  position: absolute;
+  margin: 50px 30px;
+  text-shadow: 2px 2px 2px #000;
+  color: white;
+}
+.menu__self {
+  margin: 0 60px;
+  padding: 10px 30px;
+  border-bottom: 2px solid #0000001f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+.menu__left {
+  display: flex;
+  align-items: center;
+}
+.menu__left .emoji {
+  font-size: 2.555rem;
+}
+.menu__left .menu__text {
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+.menu__right button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #0000001f;
+  background-color: transparent;
+  color: #0000001f;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.menu__right button:hover {
+  border-color: #000000aa;
+  color: #000000aa;
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin: 20px 60px;
+  border-bottom: 2px solid #0000001f;
+}
+.order__left {
+  display: flex;
+  gap: 10px;
+}
+.order__left p {
+  font-size: 1.3rem;
+}
+.order__left button {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: gray;
+}
+.order__right strong {
+  font-size: 1.3rem;
+}
+.remove__btn {
+  cursor: pointer;
+}
+.total {
+  text-align: right;
+  margin: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.total__price {
+  display: flex;
+}
+.complete__order {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #16db99;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.complete__order:hover {
+  background-color: #10b47d;
+}
